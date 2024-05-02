@@ -32,7 +32,7 @@ def get_yf_data(symbol,interval):
   df=df.round(2)
   return df.tail(1)
 def sub_loop(interval=5):
-  df=pd.Dataframe()
+  df=pd.DataFrame()
   for symbol in ['^NSEI','^NSEBANK','^BSESN']:
     yf_data=get_yf_data(symbol,str(interval)+"m")
     df=pd.concat([df,yf_data])
