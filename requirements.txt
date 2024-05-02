@@ -4,6 +4,6 @@ pandas
 pydeck
 streamlit
 yfinance
-‎pandas_ta
+‎pandas-ta
 math
 numpy
