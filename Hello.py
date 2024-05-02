@@ -29,7 +29,7 @@ def run():
     df=df[['Date','Datetime','Open','High','Low','Close','Volume']]
     df=df.round(2)
     order_datatable.dataframe(df,hide_index=True)
-    open_order_updated.text(f"Orderbook : {datetime.datetime.now(tz=gettz('Asia/Kolkata')).time().replace(microsecond=0)}")
+    order_book_updated.text(f"Orderbook : {datetime.datetime.now(tz=gettz('Asia/Kolkata')).time().replace(microsecond=0)}")
     time.sleep(60)
 if start==True:
   run()
