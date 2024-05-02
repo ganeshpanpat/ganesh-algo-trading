@@ -6,7 +6,7 @@ st.set_page_config(
         page_title="Hello",
         page_icon="👋",
     )
-    st.write("# Welcome to Streamlit! 👋")
+st.write("# Welcome to Streamlit! 👋")
 def run():
     pass
     
