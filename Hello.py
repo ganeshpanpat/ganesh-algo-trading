@@ -4,6 +4,7 @@ import yfinance as yf
 import datetime
 import time
 from dateutil.tz import gettz
+import pandas as pd
 LOGGER = get_logger(__name__)
 st.set_page_config(page_title="Algo App",layout="wide",initial_sidebar_state="expanded",)
 st.markdown("""
