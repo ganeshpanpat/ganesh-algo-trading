@@ -16,7 +16,7 @@ order_book_updated.text(f"Orderbook : ")
 order_datatable=st.empty()
 st.write("# Welcome to My Algo!")
 def run():
-  While True:
+  for i in range(100):
     df=yf.Ticker("^NSEI").history(interval="5m",period=str(2)+"d")
     df['Datetime'] = df.index
     df['Datetime']=df['Datetime'].dt.tz_localize(None)
