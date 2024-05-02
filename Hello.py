@@ -16,7 +16,7 @@ order_book_updated=st.empty()
 order_book_updated.text(f"Orderbook : ")
 order_datatable=st.empty()
 st.write("# Welcome to My Algo!")
-start=st.btton("Start")
+start=st.button("Start")
 def run():
   for i in range(100):
     df=yf.Ticker("^NSEI").history(interval="5m",period=str(2)+"d")
