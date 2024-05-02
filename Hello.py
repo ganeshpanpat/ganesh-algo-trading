@@ -16,6 +16,7 @@ order_book_updated=st.empty()
 order_book_updated.text(f"Orderbook : ")
 order_datatable=st.empty()
 st.write("# Welcome to My Algo!")
+start=st.btton("Start")
 def run():
   for i in range(100):
     df=yf.Ticker("^NSEI").history(interval="5m",period=str(2)+"d")
@@ -30,6 +31,6 @@ def run():
     open_order.dataframe(df,hide_index=True)
     open_order_updated.text(f"Orderbook : {datetime.datetime.now(tz=gettz('Asia/Kolkata')).time().replace(microsecond=0)}")
     time.sleep(60)
+if start==True:
+  run()
 
-if __name__ == "__main__":
-    run()
