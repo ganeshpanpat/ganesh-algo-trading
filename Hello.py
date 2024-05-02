@@ -5,6 +5,7 @@ import datetime
 import time
 from dateutil.tz import gettz
 import pandas as pd
+import pandas_ta as pdta
 LOGGER = get_logger(__name__)
 st.set_page_config(page_title="Algo App",layout="wide",initial_sidebar_state="expanded",)
 st.markdown("""
