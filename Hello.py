@@ -17,7 +17,7 @@ order_datatable=st.empty()
 st.write("# Welcome to My Algo!")
 def run():
   While True:
-    df=yf.Ticker("^NSEI).history(interval="5m",period=str(2)+"d")
+    df=yf.Ticker("^NSEI").history(interval="5m",period=str(2)+"d")
     df['Datetime'] = df.index
     df['Datetime']=df['Datetime'].dt.tz_localize(None)
     df.index=df['Datetime']
