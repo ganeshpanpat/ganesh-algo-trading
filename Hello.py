@@ -27,7 +27,7 @@ def get_yf_data(symbol,interval):
   df['Date']=df['Datetime'].dt.strftime('%m/%d/%y')
   df['Datetime'] = pd.to_datetime(df['Datetime']).dt.time
   df['Symbol']=symbol
-  df=df[[symbol,'Date','Datetime','Open','High','Low','Close','Volume']]
+  df=df[['Symbol','Date','Datetime','Open','High','Low','Close','Volume']]
   
   df=df.round(2)
   return df.tail(1)
