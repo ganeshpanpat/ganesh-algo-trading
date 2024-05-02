@@ -12,11 +12,12 @@ st.markdown("""
     .block-container {padding-top: 0.5rem;padding-bottom: 0rem;padding-left: 2rem;padding-right: 5rem;}
   </style>
   """, unsafe_allow_html=True)
+start=st.button("Start")
 order_book_updated=st.empty()
 order_book_updated.text(f"Orderbook : ")
 order_datatable=st.empty()
 st.write("# Welcome to My Algo!")
-start=st.button("Start")
+
 def run():
   for i in range(100):
     df=yf.Ticker("^NSEI").history(interval="5m",period=str(2)+"d")
